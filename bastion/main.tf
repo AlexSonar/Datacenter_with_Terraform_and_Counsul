@@ -1,7 +1,6 @@
-##########################
-# Creating a for Bastion #
-##########################
-
+#####################################
+# Creating AWS instance for Bastion #
+#####################################
 resource "aws_instance" "bastion" {
   ami                     = var.ami
   instance_type           = var.instance_type
@@ -27,9 +26,9 @@ resource "aws_instance" "bastion" {
   }
 }
 
-##################################
-# AWS security group for Bastion #
-##################################
+###########################################
+# Creating AWS security group for Bastion #
+###########################################
 resource "aws_security_group" "bastion" {
   name   = "bastion"
   vpc_id = var.vpc_id
