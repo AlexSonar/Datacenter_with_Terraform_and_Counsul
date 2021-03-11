@@ -1,0 +1,23 @@
+.git
+/keys/*
+.git/
+.vscode
+.idea
+.pytest_cache
+.classpath
+..gitignore.swp
+.vscode/
+.settings/
+.project
+bin
+lib
+venv/
+*terraform.tfstate*
+.terraform
+crash.log
+provider.tf
+.terraform.lock.hcl
+web_client/venv
+
+# this file is generated with consul-template
+web_client/html/index.html
